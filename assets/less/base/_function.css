@@ -1,0 +1,46 @@
+body {
+  overflow-x: hidden;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  border: 0;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px grey;
+  border-radius: 10px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ca2758;
+  border-radius: 10px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container {
+  max-width: 1170px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+@font-face {
+  src: url(/assets/font/Poppins-Bold.ttf);
+  font-family: 'poppins-bold';
+}
+@font-face {
+  src: url(/assets/font/Poppins-Regular.ttf);
+  font-family: 'poppins-regular';
+}

@@ -1,0 +1,279 @@
+.header .header-slider {
+  max-width: 1920px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.header .header-slider img {
+  width: auto;
+  height: auto;
+  object-fit: cover;
+}
+.header .header-slider .slogan {
+  position: absolute;
+  top: 30.7%;
+  left: 19.5%;
+  color: @white;
+}
+.header .header-slider .slogan h3 {
+  font-size: 60px;
+  font-family: 'poppins-bold';
+  font-weight: 700;
+}
+.header .header-slider .slogan h4 {
+  font-size: 40px;
+  font-family: 'poppins-bold';
+  font-weight: 700;
+  transform: translate(0, -15%);
+}
+.header .header-slider .slogan p {
+  width: 532px;
+  font-family: 'poppins-regular';
+  font-size: 14px;
+  line-height: 24px;
+  transform: translate(0.6%, 14%);
+}
+.header .header-slider .slogan button {
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 1px solid #ffffff;
+  padding: 14px 46px;
+  transform: translate(2%, 127%);
+}
+.header .header-slider .slogan button a {
+  font-family: 'poppins-regular';
+  font-size: 14px;
+  color: white;
+}
+.header .header-slider .slogan button:hover {
+  background-color: blue;
+}
+.header .header-nav {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  height: 100px;
+  z-index: 100;
+  width: 100%;
+  max-width: 1920px;
+}
+.header .header-nav .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1170px;
+  height: 100%;
+}
+.header .header-nav .row .nav-logo img {
+  display: block;
+  width: auto;
+  height: auto;
+  transform: translate(4%, 42%);
+}
+.header .header-nav .nav-nav {
+  font-family: 'poppins-regular';
+  font-size: 16px;
+}
+.header .header-nav .nav-nav ul {
+  display: flex;
+  margin-top: 39px;
+}
+.header .header-nav .nav-nav ul li:nth-child(1) {
+  transform: translateX(-252%);
+}
+.header .header-nav .nav-nav ul li:nth-child(2) {
+  transform: translateX(-141%);
+}
+.header .header-nav .nav-nav ul li:nth-child(3) {
+  transform: translateX(-29%);
+}
+.header .header-nav .nav-nav ul li:nth-child(4) {
+  transform: translateX(57%);
+}
+.header .header-nav .nav-nav ul li:nth-child(5) {
+  transform: translateX(254%);
+}
+.header .header-nav .nav-nav ul li:nth-child(6) {
+  transform: translateX(191%);
+}
+.header .header-nav .nav-nav ul li a {
+  color: white;
+}
+.header .header-nav .nav-nav ul li a:hover {
+  color: blue;
+}
+.header .header-nav .burger {
+  display: none;
+}
+.header .header-nav .nav-advance {
+  display: flex;
+  margin-top: 43px;
+}
+.header .header-nav .nav-advance .color {
+  color: white;
+}
+.header .header-nav .nav-advance .bd {
+  border-left: solid 2px white;
+  height: 18px;
+}
+.header .header-nav .nav-advance div {
+  margin-left: 30px;
+}
+.header .header-nav .nav-advance div:nth-child(1) {
+  transform: translateX(163%);
+}
+.header .header-nav .nav-advance div:nth-child(2) {
+  transform: translateX(19px);
+}
+.header .header-nav .nav-advance div:nth-child(3) {
+  transform: translateX(89%);
+}
+.header .header-nav .nav-advance div:nth-child(4) {
+  transform: translateX(12px);
+}
+.header .header-nav .nav-advance div:nth-child(5) {
+  transform: translateX(54%);
+}
+/*------------------- Resolution 1025px--------------------- */
+@media screen and (min-width: 1026px) and (max-width: 1250px) {
+  .header .header-slider .slogan {
+    position: absolute;
+    top: 22%;
+    left: 5%;
+  }
+  .header .header-slider .slogan button {
+    transform: translate(2%, 65%);
+  }
+}
+@media screen and (max-width: 1025px) {
+  .header .header-nav .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header .header-nav .row .nav-logo img {
+    transform: translate(0, 0);
+  }
+  .header .header-nav .row .nav-nav ul {
+    margin: 0;
+  }
+  .header .header-nav .row .nav-advance {
+    margin: 0;
+  }
+  .header .header-slider .slogan {
+    transform: scale(0.9, 0.9);
+    position: absolute;
+    top: 30.9%;
+    left: 5%;
+  }
+}
+/*--------------------------------------------------------- */
+@media screen and (max-width: 1919px) {
+  .header .header-slider img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .header .header-nav {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  .header .header-slider .slogan {
+    transform: scale(0.9, 0.9);
+    top: 22%;
+    left: 5%;
+  }
+}
+/*------------------- Resolution 768px--------------------- */
+@media screen and (max-width: 768px) {
+  .header .header-nav {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  .header-slider {
+    margin-top: 100px;
+  }
+  .header-slider .slogan {
+    top: 30.9%;
+    left: 5%;
+  }
+  .header-slider .slogan button {
+    position: absolute;
+    bottom: 58px;
+    left: 530px;
+  }
+}
+/*--------------------------------------------------------- */
+/*------------------- Resolution 600px--------------------- */
+@media screen and (max-width: 600px) {
+  .nav-nav {
+    display: none;
+  }
+  .nav-advance {
+    position: absolute;
+    left: 167px;
+    bottom: 15px;
+  }
+  .header .header-nav .burger {
+    display: block;
+    right: 35px;
+    bottom: 25px;
+    position: absolute;
+  }
+  .header .header-nav .burger .line {
+    width: 35px;
+    height: 2px;
+    background-color: white;
+    margin-top: 5px;
+  }
+  .header .header-slider .slogan {
+    transform: scale(0.8, 0.8);
+  }
+  .header .header-slider .slogan p {
+    display: none;
+  }
+  .header .header-slider .slogan button {
+    left: 0;
+    bottom: 15px;
+  }
+}
+/*--------------------------------------------------------- */
+/*------------------- Resolution 414px--------------------- */
+@media screen and (max-width: 414px) {
+  .nav-advance {
+    left: -13px;
+    bottom: 21px;
+  }
+  .header-slider img {
+    transform: scale(1.5, 1.5);
+  }
+  .header .header-slider .slogan {
+    transform: scale(0.5, 0.5);
+    top: -11.1%;
+    left: -15%;
+    line-height: 1.3;
+  }
+  .header .header-slider .slogan button {
+    bottom: -40px;
+    left: 0;
+  }
+}
+/*--------------------------------------------------------- */
+/*------------------- Resolution 375px--------------------- */
+@media screen and (max-width: 375px) {
+  .header .header-slider .slogan {
+    transform: scale(0.4, 0.4);
+    top: -15.1%;
+    left: -31%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .header .header-slider .slogan {
+    position: absolute;
+    top: -30%;
+    left: -31%;
+  }
+  .header .header-slider .slogan button {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+  }
+}

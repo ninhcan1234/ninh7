@@ -1,0 +1,66 @@
+@width-product : calc(270%/11.7);
+@width-brand : calc(100%/6);
+//COLOR--------------------------
+@black:black;
+@white: white;
+@blue: blue;
+@red: red;
+@green: green;
+@cl-line: #dddddd;
+@cl-btn: #777777;
+@cl-btn-hover:#dd2f31;
+@cl-border:#cccccc;
+@cl-bg-white:#ffffff;
+@cl-bg-black:#222222;
+@cl-font:#6e6e6e;
+body{
+	overflow-x: hidden;
+}
+//-------------------------------
+//FORMAT-------------------------
+* {
+	margin:0;
+	padding : 0;
+	box-sizing: border-box;
+	list-style     : none;
+    text-decoration: none;
+	border:0;
+}
+::-webkit-scrollbar {
+	width: 8px;
+  }
+/* Track */
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 2px grey; 
+	border-radius: 10px;
+  }
+ /* Handle */
+::-webkit-scrollbar-thumb {
+	background: rgb(202, 39, 88); 
+	border-radius: 10px;
+  }
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #b30000; 
+  }	
+.row {
+    display  : flex;
+    flex-wrap: wrap;
+}
+
+.container {
+    max-width : 1170px;
+    width     : 100%;
+    box-sizing: border-box;
+    margin    : 0 auto;
+}
+@font-face{
+	src: url(/assets/font/Poppins-Bold.ttf);
+	font-family: 'poppins-bold';
+}
+@font-face{
+	src: url(/assets/font/Poppins-Regular.ttf);
+	font-family: 'poppins-regular';
+}
+
+

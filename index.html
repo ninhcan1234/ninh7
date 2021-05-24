@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De4</title>
+    <link rel="stylesheet/less" type="text/css" href="assets/less/style.less">
+    <script type="text/javascript" src="/assets/js/style.js"></script>
+    <script src="./assets/js/less.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+</head>
+
+<body>
+    <div class="main">
+        <!--------------------------------START HEADER------------------------------------->
+        <div class="header">
+            <div class="header-nav">
+                <div class="container">
+                    <div class="row">
+                        <div class="nav-logo">
+                            <img src="/assets/images/logo.png" alt="logo">
+                        </div>
+                        <input type="checkbox" class="toggle">
+                        <div class="nav-nav">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Pages</a></li>
+                                <li><a href="#">Classes</a></li>
+                                <li><a href="#">Portfolio</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Contacts</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="burger" id="burger" >
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>
+                        <div class="nav-advance">
+                            <div class="adv adv-search"><i class="fas fa-search color"></i>
+                                <input type="checkbox" class="check-tog">
+                                <input type="text" class="search-input" placeholder="Nhập từ khóa...">
+                                <input type="button" class="btn-search" value="Tìm Kiếm">
+                            </div>
+                            <div class="bd"></div>
+                            <div class="adv"><a href="#"><i class="fas fa-shopping-basket color"></i></div></a>
+                            <div class="bd"></div>
+                            <div class="adv adv-user"><i class="fas fa-user color"></i>
+                                <input type="checkbox" class="check-tog">
+                                <ul>
+                                    <li><a href="#">Profile</a></li>
+                                    <li><a href="#">Club</a></li>
+                                    <li><a href="#">Log</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-slider">
+                <img src="/assets/images/img_bg.png" alt="abc">
+                <div class="slogan">
+                    <h3>Dumbbells Shop</h3>
+                    <h4>Best body fitness</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer</p>
+                    <button><a href="#">SHOP NOW</a></button>
+                </div>
+            </div>
+        </div>
+        <!--------------------------------END HEADER------------------------------------->
+
+        <!--------------------------------START INTRODUCE-------------------------------->
+        <div class="introduce">
+            <div class="container">
+                <div class="row">
+                    <div class="sub-intro dumbbells">
+                        <div class="dumbbell-img">
+                            <img src="/assets/images/dumbbell-img.jpg" alt="">
+                        </div>
+                        <div class="dumbell-icon">
+                            <img src="/assets/images/dumbell-icon.png" alt="">
+                            <h3>DUMBBELLS</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+                    <div class="sub-intro strength">
+                        <div class="strength-icon">
+                            <img src="/assets/images/strength-icon.png" alt="">
+                            <h3>STRENGTH</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                        <div class="strength-img">
+                            <img src="/assets/images/strength-img.jpg" alt="#">
+                        </div>
+                    </div>
+
+                    <div class="sub-intro power">
+                        <div class="power-img">
+                            <img src="/assets/images/power-img.jpg" alt="#">
+                        </div>
+                        <div class="power-icon">
+                            <img src="/assets/images/power-icon.png" alt="#">
+                            <h3>Power rack & cages</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--------------------------------END INTRODUCE-------------------------------->
+
+        <div class="content">
+            <div class="container">
+                <div class="products">
+                    <div class="products-bar">
+                        <input type="radio" name="bar" value="top-sellers" class="tsl" checked="checked">
+                        <button class="btn1">TOP SELLERS</button>
+                        <input type="radio" name="bar" value="feature" class="ft">
+                        <button class="btn2">FEATURED</button>
+                        <input type="radio" name="bar" value="most-reviews" class="mrv">
+                        <button class="btn3">MOST REVIEWS</button>
+                        <div class="line-footer"> </div>
+                        <div class="line-active"></div>
+                    </div>
+                    <div class="products-product">
+                        <!----------------------------------PRODUCTS_TOP SELLERS--------------------------------->
+                        <div class="row row-top__sellers">
+                            <div class="pr">
+                                <div class="pr-img">
+                                    <img src="/assets/images/pr1.png" alt="#">
+                                        <div class="product-advance">
+                                            <a href="#"><i class="fas fa-shopping-basket"></i></a>
+                                            <a href="#"><i class="fas fa-eye"></i></a>
+                                            <a href="#"><i class="fas fa-heart"></i></a>
+                                            <a href="#"><i class="fas fa-exchange-alt"></i></a>
+                                        </div>
+                                </div>
+                                <div class="product-text">
+                                    <p class="product-name">Body Champ Cardio</p>
+                                    <span class="product-prince">$342.00</span>
+                                </div>
+                            </div>
+                            <div class="pr">
+                                <div class="pr-img">
+                                    <img src="/assets/images/pr2.png" alt="#">
+                                    <div class="product-advance">
+                                        <a href="#"><i class="fas fa-shopping-basket"></i></a>
+                                        <a href="#"><i class="fas fa-eye"></i></a>
+                                        <a href="#"><i class="fas fa-heart"></i></a>
+                                        <a href="#"><i class="fas fa-exchange-alt"></i></a>
+                                    </div>
+                                </div>
+                                <div class="product-text">
+                                    <p class="product-name">Body Solid GCEC340</p>
+                                    <span class="product-prince">$214.00</span>
+                                </div>
+                            </div>
+                            <div class="pr">
+                                <div class="pr-img">
+                                    <img src="/assets/images/pr3.png" alt="#">
+                                    <div class="product-advance">
+                                        <a href="#"><i class="fas fa-shopping-basket"></i></a>
+                                        <a href="#"><i class="fas fa-eye"></i></a>
+                                        <a href="#"><i class="fas fa-heart"></i></a>
+                                        <a href="#"><i class="fas fa-exchange-alt"></i></a>
+                                    </div>
+                                </div>
+                                <div class="product-text">
+                                    <p class="product-name">Bowflex BXE116 Elliptical</p>
+                                    <span class="product-prince">$421.00</span>    
+                                </div>
+                            </div>
+                            <div class="pr">
+                                <div class="pr-img">
+                                    <img src="/assets/images/pr4.png" alt="#">
+                                    <div class="product-advance">
+                                        <a href="#"><i class="fas fa-shopping-basket"></i></a>
+                                        <a href="#"><i class="fas fa-eye"></i></a>
+                                        <a href="#"><i class="fas fa-heart"></i></a>
+                                        <a href="#"><i class="fas fa-exchange-alt"></i></a>
+                                    </div>
+                                </div>
+                                <div class="product-text">
+                                    <p class="product-name">ETHOS GHD</p>
+                                    <span class="product-prince">$152.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-top__sellers">
+                            <div class="pr">
+                                <div class="pr-img">
+                                    <img src="/assets/images/pr5.png" alt="#">
+                                    <div class="product-advance">
+                                        <a href="#"><i class="fas fa-shopping-basket"></i></a>
+                                        <a href="#"><i class="fas fa-eye"></i></a>
+                                        <a href="#"><i class="fas fa-heart"></i></a>
+                                        <a href="#"><i class="fas fa-exchange-alt"></i></a>
+                                    </div>
+                                </div>
+                                <div class="product-text">
+                                    <p class="product-name">AFG Pro 7.2AI Incline</p>
+                                    <span class="product-prince">$252.00</span>
+                                </div>
+                            </div>
+                            <div class="pr">
+                                <div class="pr-img">
+                                    <img src="/assets/images/pr6.png" alt="#">
+                                    <div class="product-advance">
+                                        <a href="#"><i class="fas fa-shopping-basket"></i></a>
+                                        <a href="#"><i class="fas fa-eye"></i></a>
+                                        <a href="#"><i class="fas fa-heart"></i></a>
+                                        <a href="#"><i class="fas fa-exchange-alt"></i></a>
+                                    </div>
+                                </div>
+                                <div class="product-text">
+                                    <p class="product-name">Weight Bench</p>
+                                    <span class="product-prince">$412.00</span>
+                                </div>
+                            </div>
+                            <div class="pr">
+                                <div class="pr-img">
+                                    <img src="/assets/images/pr7.png" alt="#">
+                                    <div class="product-advance">
+                                        <a href="#"><i class="fas fa-shopping-basket"></i></a>
+                                        <a href="#"><i class="fas fa-eye"></i></a>
+                                        <a href="#"><i class="fas fa-heart"></i></a>
+                                        <a href="#"><i class="fas fa-exchange-alt"></i></a>
+                                    </div>
+                                </div>
+                                <div class="product-text">
+                                    <p class="product-name">ProForm Hiit Trainer Lite 5.9</p>
+                                    <span class="product-prince">$300.00</span>                                   
+                                </div>
+                            </div>
+                            <div class="pr">
+                                <div class="pr-img">
+                                    <img src="/assets/images/pr8.png" alt="#">
+                                    <div class="product-advance">
+                                        <a href="#"><i class="fas fa-shopping-basket"></i></a>
+                                        <a href="#"><i class="fas fa-eye"></i></a>
+                                        <a href="#"><i class="fas fa-heart"></i></a>
+                                        <a href="#"><i class="fas fa-exchange-alt"></i></a>
+                                    </div>
+                                </div>
+                                <div class="product-text">
+                                    <p class="product-name">Fitness Gear Pro</p>
+                                    <span class="product-prince">$124.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!----------------------------------PRODUCTS_TOP SELLERS END--------------------------------->
+
+                        <!------------------------------------PRODUCTS_FEATURED-------------------------------------->
+                        <div class="row row-featured">
+                            <div class="pr">
+                                <div class="pr-img">
+                                    <img src="/assets/images/pr2.png" alt="#">
+                                </div>
+                                <div class="product-text">
+                                    <p class="product-name">Body Champ Cardio</p>
+                                    <span class="product-prince">$342.00</span>
+                                </div>
+                            </div>
+                            <div class="pr">
+                                <div class="pr-img">
+                                    <img src="/assets/images/pr1.png" alt="#">
+                                </div>
+                                <div class="product-text">
+                                    <p class="product-name">Body Solid GCEC340</p>
+                                    <span class="product-prince">$214.00</span>
+                                </div>
+                            </div>
+                            <div class="pr">
+                                <div class="pr-img">
+                                    
+                                    <img src="/assets/images/pr8.png" alt="#">    
+                                </div>
+                                <div class="product-text">
+                                    <p class="product-name">Bowflex BXE116 Elliptical</p>
+                                    <span class="product-prince">$421.00</span>    
+                                </div>
+                            </div>
+                            <div class="pr">
+                                <div class="pr-img">
+                                    <img src="/assets/images/pr4.png" alt="#">
+                                </div>
+                                <div class="product-text">
+                                    <p class="product-name">ETHOS GHD</p>
+                                    <span class="product-prince">$152.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-featured">
+                            <div class="pr">
+                                <div class="pr-img">
+                                    <img src="/assets/images/pr7.png" alt="#">
+                                </div>
+                                <div class="product-text">
+                                    <p class="product-name">AFG Pro 7.2AI Incline</p>
+                                    <span class="product-prince">$252.00</span>
+                                </div>
+                            </div>
+                            <div class="pr">
+                                <div class="pr-img">
+                                    <img src="/assets/images/pr6.png" alt="#">
+                                </div>
+                                <div class="product-text">
+                                    <p class="product-name">Weight Bench</p>
+                                    <span class="product-prince">$412.00</span>
+                                </div>
+                            </div>
+                            <div class="pr">
+                                <div class="pr-img">
+                                    
+                                    <img src="/assets/images/pr5.png" alt="#">
+                                </div>
+                                <div class="product-text">
+                                    <p class="product-name">ProForm Hiit Trainer Lite 5.9</p>
+                                    <span class="product-prince">$300.00</span>                                   
+                                </div>
+                            </div>
+                            <div class="pr">
+                                <div class="pr-img">
+                                    <img src="/assets/images/pr3.png" alt="#">
+                                </div>
+                                <div class="product-text">
+                                    <p class="product-name">Fitness Gear Pro</p>
+                                    <span class="product-prince">$124.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!------------------------------------PRODUCTS_FEATURED END---------------------------------->
+
+                        <!------------------------------------PRODUCTS_MOST REVIEWS---------------------------------->
+                        <div class="row row-most__reviews">
+                            <div class="pr">
+                                <div class="pr-img">
+                                    
+                                    <img src="/assets/images/pr5.png" alt="#">
+                                </div>
+                                <div class="product-text">
+                                    <p class="product-name">Body Champ Cardio</p>
+                                    <span class="product-prince">$342.00</span>
+                                </div>
+                            </div>
+                            <div class="pr">
+                                <div class="pr-img">
+                                    <img src="/assets/images/pr2.png" alt="#">
+                                </div>
+                                <div class="product-text">
+                                    <p class="product-name">Body Solid GCEC340</p>
+                                    <span class="product-prince">$214.00</span>
+                                </div>
+                            </div>
+                            <div class="pr">
+                                <div class="pr-img">
+                                    <img src="/assets/images/pr1.png" alt="#">    
+                                </div>
+                                <div class="product-text">
+                                    <p class="product-name">Bowflex BXE116 Elliptical</p>
+                                    <span class="product-prince">$421.00</span>    
+                                </div>
+                            </div>
+                            <div class="pr">
+                                <div class="pr-img">
+                                    <img src="/assets/images/pr8.png" alt="#">
+                                </div>
+                                <div class="product-text">
+                                    <p class="product-name">ETHOS GHD</p>
+                                    <span class="product-prince">$152.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-most__reviews">
+                            <div class="pr">
+                                <div class="pr-img">
+                                    <img src="/assets/images/pr2.png" alt="#">
+                                </div>
+                                <div class="product-text">
+                                    <p class="product-name">AFG Pro 7.2AI Incline</p>
+                                    <span class="product-prince">$252.00</span>
+                                </div>
+                            </div>
+                            <div class="pr">
+                                <div class="pr-img">
+                                    <img src="/assets/images/pr6.png" alt="#">
+                                </div>
+                                <div class="product-text">
+                                    <p class="product-name">Weight Bench</p>
+                                    <span class="product-prince">$412.00</span>
+                                </div>
+                            </div>
+                            <div class="pr">
+                                <div class="pr-img">
+                                    <img src="/assets/images/pr4.png" alt="#">
+                                </div>
+                                <div class="product-text">
+                                    <p class="product-name">ProForm Hiit Trainer Lite 5.9</p>
+                                    <span class="product-prince">$300.00</span>                                   
+                                </div>
+                            </div>
+                            <div class="pr">
+                                <div class="pr-img">
+                                    
+                                    <img src="/assets/images/pr3.png" alt="#">
+                                </div>
+                                <div class="product-text">
+                                    <p class="product-name">Fitness Gear Pro</p>
+                                    <span class="product-prince">$124.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!------------------------------------PRODUCTS_MOST REVIEWS END------------------------------>
+
+                    </div>
+                </div>
+            </div>
+        <!---------------------------------END PRODUCTS-------------------------------------->
+                                        <!---************--->
+        <!---------------------------------START CLIENT SAY -------------------------------->
+        <div class="container">
+                <div class="client-say">
+                    <div class="slider">
+                        <div class="clients">
+                            <input type="radio" checked="checked" name="radio-btn" id="radio1">
+                            <input type="radio" name="radio-btn" id="radio2">
+                            <input type="radio" name="radio-btn" id="radio3">
+                            <div class="client client__first">
+                                <div class="expression">
+                                    <h3>See What They Said About Us</h3>
+                                </div>
+                                <div class="expresser">
+                                    <img src="/assets/images/whosay.png" alt="#">
+                                </div>
+                                <div class="expresser-said">
+                                    <p>"Good services. I bought a bicycle with a wrong but they accepted free return for me
+                                        and exchange a new product for me.
+                                    </p>
+                                </div>
+                                <p class="expresser-name">
+                                    LINA
+                                </p>
+                                <div class="expresser-congratulation">
+                                    <p>
+                                        Happy clients
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="client client__second">
+                                <div class="expression">
+                                    <h3>See What They Said About Us</h3>
+                                </div>
+                                <div class="expresser">
+                                    <img src="/assets/images/whosay.png" alt="#">
+                                </div>
+                                <div class="expresser-said">
+                                    <p>"Good services. I bought a bicycle with a wrong but they accepted free return for me
+                                        and exchange a new product for me.
+                                    </p>
+                                </div>
+                                <p class="expresser-name">
+                                    LINA
+                                </p>
+                                <div class="expresser-congratulation">
+                                    <p>
+                                        Happy clients
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="client client__third">
+                                <div class="expression">
+                                    <h3>See What They Said About Us</h3>
+                                </div>
+                                <div class="expresser">
+                                    <img src="/assets/images/whosay.png" alt="#">
+                                </div>
+                                <div class="expresser-said">
+                                    <p>"Good services. I bought a bicycle with a wrong but they accepted free return for me
+                                        and exchange a new product for me.
+                                    </p>
+                                </div>
+                                <p class="expresser-name">
+                                    LINA
+                                </p>
+                                <div class="expresser-congratulation">
+                                    <p>
+                                        Happy clients
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="navigation-auto">
+                                <div class="auto-btn1"></div>
+                                <div class="auto-btn2"></div>
+                                <div class="auto-btn3"></div>
+                            </div>
+    
+                            <!---Automatic Navigation-->
+                            
+                            
+                            <div class="navigation-manual">
+                                <label for="radio1" class="manual-btn"></label>
+                                <label for="radio2" class="manual-btn"></label>
+                                <label for="radio3" class="manual-btn"></label>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        <!------------------------------------END SAY CLIENT--------------------------------->
+            
+        <!--------------------------------------START BRAND---------------------------------->
+            <div class="brands">
+                <div class="container">
+                    <div class="line-footer"> </div>
+                    <div class="row row-brands">
+                        <div class="brand br1"><img src="/assets/images/br1.png" alt="#"></div>
+                        <div class="brand br2"><img src="/assets/images/br2.png" alt="#"></div>
+                        <div class="brand br3"><img src="/assets/images/br3.png" alt="#"></div>
+                        <div class="brand br4"><img src="/assets/images/br4.png" alt="#"></div>
+                        <div class="brand br5"><img src="/assets/images/br5.png" alt="#"></div>
+                        <div class="brand br6"><img src="/assets/images/br6.png" alt="#"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--------------------------------END CONTENT---------------------------------------->
+
+        <!---------------------------------START FOOTER-------------------------------------->
+        <div class="footer">
+            <div class="container">
+                <div class="footer-top">
+                    <div class="footer__logo">
+                        <img src="/assets/images/logo.png" alt="#">
+                    </div>
+                    <div class="footer__text">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>
+                    </div>
+                    <div class="footer__link">
+                        <ul>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="line-footer"> </div>
+                <div class="footer-mid">
+                    <div class="row row__footer-mid">
+                        <div class="contact">
+                            <h3>contact us</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> 200 Lincoln Ave, Salinas, CA 93901</p>
+                            <p><i class="fas fa-phone"></i> 023 32423 223</p>
+                            <p><i class="fas fa-envelope"></i> gymax@example.com</p>
+                            <p><i class="fas fa-clock"></i> 9:00 - 20:00 All day</p>
+                        </div>
+                        <div class="myaccount">
+                            <h3>my account</h3>
+                            <a href="#"><p>My account</p></a>
+                            <a href="#"><p>check out</p></a>
+                            <a href="#"><p>register</p></a>
+                            <a href="#"><p>Login</p></a>
+                        </div>
+                        <div class="information">
+                            <h3>information</h3>
+                            <a href="#"><p>About us</p></a>
+                            <a href="#"><p>Contact us</p></a>
+                            <a href="#"><p>Terms of user</p></a>
+                            <a href="#"><p>Privacy Policy</p></a>
+                        </div>
+                        <div class="qlink">
+                            <h3>quick link</h3>
+                            <a href="#"><p> New user</p></a>
+                            <a href="#"><p>Help center</p></a>
+                            <a href="#"><p>Report spam</p></a>
+                            <a href="#"><p>FAQs</p></a>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+        <div class="footer__bot">
+            <p>Copyright &copy 2019 Gymax - Design by ArrowHitech - All Rights Reserved</p>
+        </div>
+        <!-----------------------------------END FOOTER-------------------------------------->
+    </div>
+</body>
+
+</html>

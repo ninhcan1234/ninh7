@@ -1,0 +1,180 @@
+.introduce{
+    position: relative;
+    bottom: 82px;
+    left: 4px;
+    border-bottom: 1px @cl-border solid;
+    border-left: 1px @cl-border solid;
+    border-right: 1px @cl-border solid;
+    height: 500px;
+    width: 100%;
+    
+}
+
+.sub-intro{
+    width: calc(100%/3);
+    height: 100%;
+    h3{
+        font-family: 'poppins-bold';
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+    p{
+        font-family: 'poppins-regular';
+        font-size: 14px;
+        width: 80%;
+        text-align: center;
+    }
+}
+.dumbell-icon,.strength-icon,.power-icon{
+    position: relative;
+    
+}
+
+.dumbbells{
+    .dumbbell-img{
+        img{
+            width: 100%;
+            height: 100%;
+        }   
+    } 
+    .dumbell-icon{
+        height: 250px;
+        img{
+            position: absolute;
+            left: 40.7%;
+            top: 18%;
+        }
+        h3{
+            position: absolute;
+            top: 48.5%;
+            left: 36.4%
+        }
+        p{
+            position: absolute;
+            top: 65.7%;
+        left: 9.7%;
+        line-height: 24px;
+        }
+    }
+}
+.strength{
+    .strength-img{
+        img{
+            width: 100%;
+            height: 100%;
+        }   
+    }
+    .strength-icon{
+        background:@cl-bg-white;
+        height: 250px;
+        img{
+            position: absolute;
+            left: 43%;
+            top: 12.7%;
+        }
+        h3{
+            position: absolute;
+            top: 50%;
+            left: 37.8%;
+        }
+        p{
+            position: absolute;
+            top: 67.7%;
+            left: 9.9%;
+            line-height: 24px;
+        }
+    }
+    
+}
+.power{
+    .power-img{
+        img{
+            width: 100%;
+            height: 100%;
+        }   
+    } 
+    .power-icon{
+        height: 250px;
+        img{
+            position: absolute;
+            left: 43.1%;
+            top: 11.2%;
+        }
+        h3{
+            position: absolute;
+            top: 48.6%;
+            left: 24%;
+            word-spacing: -1px;
+        }
+        p{
+            position: absolute;
+            top: 65.9%;
+            left: 10%;
+            line-height: 24px;
+        }
+    }
+    
+}
+//------------------------------------------
+
+/*FOR..............*/
+@media screen and (max-width:1024px){
+    .introduce{
+        bottom: 20px;
+        left:9px;
+        height: 500px;
+    }
+}
+//------------------------------------------
+
+/*FOR..............*/
+@media screen and (max-width:768px){
+    .introduce{
+        bottom: 0;
+        height:750px;
+        margin-bottom: 30px;
+        .row{
+            flex-wrap: wrap;
+            flex-direction: column;
+            .sub-intro{
+                display: flex;
+                width: 100%;
+                div{
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+//------------------------------------------
+
+/*FOR..............*/
+@media screen and (max-width:414px){
+    .introduce{
+        height:1500px;
+        .row{
+            flex-wrap: wrap;
+            flex-direction: column;
+            .sub-intro{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                div{
+                    width: 100%;
+                }
+                .strength-img{
+                    order: 1;
+                }
+                .strength-icon{
+                    order:2;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:769px) and(max-width:1188px) {
+    .dumbbells .dumbbell-img,.strength-img,.power-img{
+        height: 250px;
+    }
+    
+}

@@ -1,0 +1,299 @@
+warning: LF will be replaced by CRLF in index.html.
+The file will have its original line endings in your working directory
+[1mdiff --git a/index.html b/index.html[m
+[1mindex d26f152..011a445 100644[m
+[1m--- a/index.html[m
+[1m+++ b/index.html[m
+[36m@@ -6,8 +6,8 @@[m
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+     <title>De4</title>[m
+     <link rel="stylesheet/less" type="text/css" href="assets/less/style.less">[m
+[31m-    <script type="text/javascript" src="/assets/js/style.js"></script>[m
+[31m-    <script src="./assets/js/less.js"></script>[m
+[32m+[m[32m    <script type="text/javascript" src="assets/js/style.js"></script>[m
+[32m+[m[32m    <script src="assets/js/less.js"></script>[m
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />[m
+ </head>[m
+ [m
+[36m@@ -19,7 +19,7 @@[m
+                 <div class="container">[m
+                     <div class="row">[m
+                         <div class="nav-logo">[m
+[31m-                            <img src="/assets/images/logo.png" alt="logo">[m
+[32m+[m[32m                            <img src="assets/images/logo.png" alt="logo">[m
+                         </div>[m
+                         <input type="checkbox" class="toggle">[m
+                         <div class="nav-nav">[m
+[36m@@ -60,7 +60,7 @@[m
+                 </div>[m
+             </div>[m
+             <div class="header-slider">[m
+[31m-                <img src="/assets/images/img_bg.png" alt="abc">[m
+[32m+[m[32m                <img src="assets/images/img_bg.png" alt="abc">[m
+                 <div class="slogan">[m
+                     <h3>Dumbbells Shop</h3>[m
+                     <h4>Best body fitness</h4>[m
+[36m@@ -78,31 +78,31 @@[m
+                 <div class="row">[m
+                     <div class="sub-intro dumbbells">[m
+                         <div class="dumbbell-img">[m
+[31m-                            <img src="/assets/images/dumbbell-img.jpg" alt="">[m
+[32m+[m[32m                            <img src="assets/images/dumbbell-img.jpg" alt="">[m
+                         </div>[m
+                         <div class="dumbell-icon">[m
+[31m-                            <img src="/assets/images/dumbell-icon.png" alt="">[m
+[32m+[m[32m                            <img src="assets/images/dumbell-icon.png" alt="">[m
+                             <h3>DUMBBELLS</h3>[m
+                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>[m
+                         </div>[m
+                     </div>[m
+                     <div class="sub-intro strength">[m
+                         <div class="strength-icon">[m
+[31m-                            <img src="/assets/images/strength-icon.png" alt="">[m
+[32m+[m[32m                            <img src="assets/images/strength-icon.png" alt="">[m
+                             <h3>STRENGTH</h3>[m
+                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>[m
+                         </div>[m
+                         <div class="strength-img">[m
+[31m-                            <img src="/assets/images/strength-img.jpg" alt="#">[m
+[32m+[m[32m                            <img src="assets/images/strength-img.jpg" alt="#">[m
+                         </div>[m
+                     </div>[m
+ [m
+                     <div class="sub-intro power">[m
+                         <div class="power-img">[m
+[31m-                            <img src="/assets/images/power-img.jpg" alt="#">[m
+[32m+[m[32m                            <img src="assets/images/power-img.jpg" alt="#">[m
+                         </div>[m
+                         <div class="power-icon">[m
+[31m-                            <img src="/assets/images/power-icon.png" alt="#">[m
+[32m+[m[32m                            <img src="assets/images/power-icon.png" alt="#">[m
+                             <h3>Power rack & cages</h3>[m
+                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>[m
+                         </div>[m
+[36m@@ -130,7 +130,7 @@[m
+                         <div class="row row-top__sellers">[m
+                             <div class="pr">[m
+                                 <div class="pr-img">[m
+[31m-                                    <img src="/assets/images/pr1.png" alt="#">[m
+[32m+[m[32m                                    <img src="assets/images/pr1.png" alt="#">[m
+                                         <div class="product-advance">[m
+                                             <a href="#"><i class="fas fa-shopping-basket"></i></a>[m
+                                             <a href="#"><i class="fas fa-eye"></i></a>[m
+[36m@@ -145,7 +145,7 @@[m
+                             </div>[m
+                             <div class="pr">[m
+                                 <div class="pr-img">[m
+[31m-                                    <img src="/assets/images/pr2.png" alt="#">[m
+[32m+[m[32m                                    <img src="assets/images/pr2.png" alt="#">[m
+                                     <div class="product-advance">[m
+                                         <a href="#"><i class="fas fa-shopping-basket"></i></a>[m
+                                         <a href="#"><i class="fas fa-eye"></i></a>[m
+[36m@@ -160,7 +160,7 @@[m
+                             </div>[m
+                             <div class="pr">[m
+                                 <div class="pr-img">[m
+[31m-                                    <img src="/assets/images/pr3.png" alt="#">[m
+[32m+[m[32m                                    <img src="assets/images/pr3.png" alt="#">[m
+                                     <div class="product-advance">[m
+                                         <a href="#"><i class="fas fa-shopping-basket"></i></a>[m
+                                         <a href="#"><i class="fas fa-eye"></i></a>[m
+[36m@@ -175,7 +175,7 @@[m
+                             </div>[m
+                             <div class="pr">[m
+                                 <div class="pr-img">[m
+[31m-                                    <img src="/assets/images/pr4.png" alt="#">[m
+[32m+[m[32m                                    <img src="assets/images/pr4.png" alt="#">[m
+                                     <div class="product-advance">[m
+                                         <a href="#"><i class="fas fa-shopping-basket"></i></a>[m
+                                         <a href="#"><i class="fas fa-eye"></i></a>[m
+[36m@@ -192,7 +192,7 @@[m
+                         <div class="row row-top__sellers">[m
+                             <div class="pr">[m
+                                 <div class="pr-img">[m
+[31m-                                    <img src="/assets/images/pr5.png" alt="#">[m
+[32m+[m[32m                                    <img src="assets/images/pr5.png" alt="#">[m
+                                     <div class="product-advance">[m
+                                         <a href="#"><i class="fas fa-shopping-basket"></i></a>[m
+                                         <a href="#"><i class="fas fa-eye"></i></a>[m
+[36m@@ -237,7 +237,7 @@[m
+                             </div>[m
+                             <div class="pr">[m
+                                 <div class="pr-img">[m
+[31m-                                    <img src="/assets/images/pr8.png" alt="#">[m
+[32m+[m[32m                                    <img src="assets/images/pr8.png" alt="#">[m
+                                     <div class="product-advance">[m
+                                         <a href="#"><i class="fas fa-shopping-basket"></i></a>[m
+                                         <a href="#"><i class="fas fa-eye"></i></a>[m
+[36m@@ -257,7 +257,7 @@[m
+                         <div class="row row-featured">[m
+                             <div class="pr">[m
+                                 <div class="pr-img">[m
+[31m-                                    <img src="/assets/images/pr2.png" alt="#">[m
+[32m+[m[32m                                    <img src="assets/images/pr2.png" alt="#">[m
+                                 </div>[m
+                                 <div class="product-text">[m
+                                     <p class="product-name">Body Champ Cardio</p>[m
+[36m@@ -285,7 +285,7 @@[m
+                             </div>[m
+                             <div class="pr">[m
+                                 <div class="pr-img">[m
+[31m-                                    <img src="/assets/images/pr4.png" alt="#">[m
+[32m+[m[32m                                    <img src="assets/images/pr4.png" alt="#">[m
+                                 </div>[m
+                                 <div class="product-text">[m
+                                     <p class="product-name">ETHOS GHD</p>[m
+[36m@@ -296,7 +296,7 @@[m
+                         <div class="row row-featured">[m
+                             <div class="pr">[m
+                                 <div class="pr-img">[m
+[31m-                                    <img src="/assets/images/pr7.png" alt="#">[m
+[32m+[m[32m                                    <img src="assets/images/pr7.png" alt="#">[m
+                                 </div>[m
+                                 <div class="product-text">[m
+                                     <p class="product-name">AFG Pro 7.2AI Incline</p>[m
+[36m@@ -305,7 +305,7 @@[m
+                             </div>[m
+                             <div class="pr">[m
+                                 <div class="pr-img">[m
+[31m-                                    <img src="/assets/images/pr6.png" alt="#">[m
+[32m+[m[32m                                    <img src="assets/images/pr6.png" alt="#">[m
+                                 </div>[m
+                                 <div class="product-text">[m
+                                     <p class="product-name">Weight Bench</p>[m
+[36m@@ -315,7 +315,7 @@[m
+                             <div class="pr">[m
+                                 <div class="pr-img">[m
+                                     [m
+[31m-                                    <img src="/assets/images/pr5.png" alt="#">[m
+[32m+[m[32m                                    <img src="assets/images/pr5.png" alt="#">[m
+                                 </div>[m
+                                 <div class="product-text">[m
+                                     <p class="product-name">ProForm Hiit Trainer Lite 5.9</p>[m
+[36m@@ -324,7 +324,7 @@[m
+                             </div>[m
+                             <div class="pr">[m
+                                 <div class="pr-img">[m
+[31m-                                    <img src="/assets/images/pr3.png" alt="#">[m
+[32m+[m[32m                                    <img src="assets/images/pr3.png" alt="#">[m
+                                 </div>[m
+                                 <div class="product-text">[m
+                                     <p class="product-name">Fitness Gear Pro</p>[m
+[36m@@ -339,7 +339,7 @@[m
+                             <div class="pr">[m
+                                 <div class="pr-img">[m
+                                     [m
+[31m-                                    <img src="/assets/images/pr5.png" alt="#">[m
+[32m+[m[32m                                    <img src="assets/images/pr5.png" alt="#">[m
+                                 </div>[m
+                                 <div class="product-text">[m
+                                     <p class="product-name">Body Champ Cardio</p>[m
+[36m@@ -348,7 +348,7 @@[m
+                             </div>[m
+                             <div class="pr">[m
+                                 <div class="pr-img">[m
+[31m-                                    <img src="/assets/images/pr2.png" alt="#">[m
+[32m+[m[32m                                    <img src="assets/images/pr2.png" alt="#">[m
+                                 </div>[m
+                                 <div class="product-text">[m
+                                     <p class="product-name">Body Solid GCEC340</p>[m
+[36m@@ -357,7 +357,7 @@[m
+                             </div>[m
+                             <div class="pr">[m
+                                 <div class="pr-img">[m
+[31m-                                    <img src="/assets/images/pr1.png" alt="#">    [m
+[32m+[m[32m                                    <img src="assets/images/pr1.png" alt="#">[m[41m    [m
+                                 </div>[m
+                                 <div class="product-text">[m
+                                     <p class="product-name">Bowflex BXE116 Elliptical</p>[m
+[36m@@ -366,7 +366,7 @@[m
+                             </div>[m
+                             <div class="pr">[m
+                                 <div class="pr-img">[m
+[31m-                                    <img src="/assets/images/pr8.png" alt="#">[m
+[32m+[m[32m                                    <img src="assets/images/pr8.png" alt="#">[m
+                                 </div>[m
+                                 <div class="product-text">[m
+                                     <p class="product-name">ETHOS GHD</p>[m
+[36m@@ -377,7 +377,7 @@[m
+                         <div class="row row-most__reviews">[m
+                             <div class="pr">[m
+                                 <div class="pr-img">[m
+[31m-                                    <img src="/assets/images/pr2.png" alt="#">[m
+[32m+[m[32m                                    <img src="assets/images/pr2.png" alt="#">[m
+                                 </div>[m
+                                 <div class="product-text">[m
+                                     <p class="product-name">AFG Pro 7.2AI Incline</p>[m
+[36m@@ -395,7 +395,7 @@[m
+                             </div>[m
+                             <div class="pr">[m
+                                 <div class="pr-img">[m
+[31m-                                    <img src="/assets/images/pr4.png" alt="#">[m
+[32m+[m[32m                                    <img src="assets/images/pr4.png" alt="#">[m
+                                 </div>[m
+                                 <div class="product-text">[m
+                                     <p class="product-name">ProForm Hiit Trainer Lite 5.9</p>[m
+[36m@@ -405,7 +405,7 @@[m
+                             <div class="pr">[m
+                                 <div class="pr-img">[m
+                                     [m
+[31m-                                    <img src="/assets/images/pr3.png" alt="#">[m
+[32m+[m[32m                                    <img src="assets/images/pr3.png" alt="#">[m
+                                 </div>[m
+                                 <div class="product-text">[m
+                                     <p class="product-name">Fitness Gear Pro</p>[m
+[36m@@ -433,7 +433,7 @@[m
+                                     <h3>See What They Said About Us</h3>[m
+                                 </div>[m
+                                 <div class="expresser">[m
+[31m-                                    <img src="/assets/images/whosay.png" alt="#">[m
+[32m+[m[32m                                    <img src="assets/images/whosay.png" alt="#">[m
+                                 </div>[m
+                                 <div class="expresser-said">[m
+                                     <p>"Good services. I bought a bicycle with a wrong but they accepted free return for me[m
+[36m@@ -454,7 +454,7 @@[m
+                                     <h3>See What They Said About Us</h3>[m
+                                 </div>[m
+                                 <div class="expresser">[m
+[31m-                                    <img src="/assets/images/whosay.png" alt="#">[m
+[32m+[m[32m                                    <img src="assets/images/whosay.png" alt="#">[m
+                                 </div>[m
+                                 <div class="expresser-said">[m
+                                     <p>"Good services. I bought a bicycle with a wrong but they accepted free return for me[m
+[36m@@ -475,7 +475,7 @@[m
+                                     <h3>See What They Said About Us</h3>[m
+                                 </div>[m
+                                 <div class="expresser">[m
+[31m-                                    <img src="/assets/images/whosay.png" alt="#">[m
+[32m+[m[32m                                    <img src="assets/images/whosay.png" alt="#">[m
+                                 </div>[m
+                                 <div class="expresser-said">[m
+                                     <p>"Good services. I bought a bicycle with a wrong but they accepted free return for me[m
+[36m@@ -517,12 +517,12 @@[m
+                 <div class="container">[m
+                     <div class="line-footer"> </div>[m
+                     <div class="row row-brands">[m
+[31m-                        <div class="brand br1"><img src="/assets/images/br1.png" alt="#"></div>[m
+[31m-                        <div class="brand br2"><img src="/assets/images/br2.png" alt="#"></div>[m
+[31m-                        <div class="brand br3"><img src="/assets/images/br3.png" alt="#"></div>[m
+[31m-                        <div class="brand br4"><img src="/assets/images/br4.png" alt="#"></div>[m
+[31m-                        <div class="brand br5"><img src="/assets/images/br5.png" alt="#"></div>[m
+[31m-                        <div class="brand br6"><img src="/assets/images/br6.png" alt="#"></div>[m
+[32m+[m[32m                        <div class="brand br2"><img src="assets/images/br2.png" alt="#"></div>[m
+[32m+[m[32m                        <div class="brand br3"><img src="assets/images/br3.png" alt="#"></div>[m
+[32m+[m[32m                        <div class="brand br4"><img src="assets/images/br4.png" alt="#"></div>[m
+[32m+[m[32m                        <div class="brand br1"><img src="assets/images/br1.png" alt="#"></div>[m
+[32m+[m[32m                        <div class="brand br5"><img src="assets/images/br5.png" alt="#"></div>[m
+[32m+[m[32m                        <div class="brand br6"><img src="assets/images/br6.png" alt="#"></div>[m
+                     </div>[m
+                 </div>[m
+             </div>[m
+[36m@@ -534,7 +534,7 @@[m
+             <div class="container">[m
+                 <div class="footer-top">[m
+                     <div class="footer__logo">[m
+[31m-                        <img src="/assets/images/logo.png" alt="#">[m
+[32m+[m[32m                        <img src="assets/images/logo.png" alt="#">[m
+                     </div>[m
+                     <div class="footer__text">[m
+                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>[m

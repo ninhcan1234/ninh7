@@ -36,11 +36,3 @@ body {
   box-sizing: border-box;
   margin: 0 auto;
 }
-@font-face {
-  src: url(/assets/font/Poppins-Bold.ttf);
-  font-family: 'poppins-bold';
-}
-@font-face {
-  src: url(/assets/font/Poppins-Regular.ttf);
-  font-family: 'poppins-regular';
-}

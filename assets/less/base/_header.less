@@ -3,7 +3,7 @@
         position: relative;
         max-width: 1920px;
         width    : 100%;
-       img:hover + .slogan>button{
+       img:hover + .slogan>span{
             background-color: rgba(0, 0, 0, 0.4);
        }
     //--------SLOGAN---------------
@@ -35,7 +35,8 @@
                 transform  : translate(0.6%, 14%);
             }
 
-            button {
+            span {
+                display: inline-block;
                 background-color: rgba(0, 0, 0, 0.1);
                 border          : 1px solid @cl-border;
                 padding         : 14px 46px;
@@ -257,7 +258,7 @@
     .header .header-slider img{
         width: 100%;
     }
-    .header .header-slider .slogan button {
+    .header .header-slider .slogan span {
         transform: unset;
         margin-top:25px;
     }
@@ -322,7 +323,7 @@
     .header .header-slider .slogan p {
         width: 440px;
     }
-    .header .header-slider img:hover + .slogan>button{
+    .header .header-slider img:hover + .slogan>span{
         background-color: rgba(0, 0, 0, 0.1);
    }
 }
@@ -431,7 +432,7 @@
     .header .header-slider .slogan h4{
         font-size: 23px;
     }
-    .header .header-slider .slogan button {
+    .header .header-slider .slogan span {
         padding: 10px 20px;
     }
 
@@ -440,7 +441,7 @@
 
 /*FOR..............*/
 @media screen and(max-width:375px) {
-    .header .header-slider .slogan button {
+    .header .header-slider .slogan span {
         padding: 5px 10px;
         font-size: 12px;
     }

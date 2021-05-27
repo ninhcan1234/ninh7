@@ -8,6 +8,7 @@ body {
   list-style: none;
   text-decoration: none;
   border: 0;
+  scroll-behavior: smooth;
 }
 ::-webkit-scrollbar {
   width: 8px;
@@ -29,10 +30,20 @@ body {
 .row {
   display: flex;
   flex-wrap: wrap;
+  margin: 0 -15px;
 }
 .container {
   max-width: 1170px;
   width: 100%;
   box-sizing: border-box;
   margin: 0 auto;
+  padding: 0 15px;
+}
+@font-face {
+  font-family: 'Poppins-bold';
+  src: url(../font/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: 'Poppins-regular';
+  src: url(../font/Poppins-Regular.ttf);
 }

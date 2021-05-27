@@ -20,8 +20,17 @@ window.onload=function(){
         rr.style.display = 'none';
         rrr.style.display = 'flex';
     })
+//---------------
+    var cclick = document.querySelectorAll(".footer-mid a");
+    for(var i=0; i<cclick.length;i++){
+        cclick[i].onclick = function(event){
+            event.target.style.color = 'white';
+        }
+    }
+
 }
 //
+
 
 
 ///Automatic change the slide

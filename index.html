@@ -5,17 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>De4</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet/less" type="text/css" href="assets/less/style.less">
-    <script type="text/javascript" src="assets/js/style.js"></script>
+    <script src="assets/js/style.js"></script>
     <script src="assets/js/less.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
 </head>
 
 <body>
     <div class="main">
-        <!--------------------------------START HEADER------------------------------------->
+        <!--__________________START HEADER________________-->
         <div class="header">
             <div class="header-nav">
                 <div class="container">
@@ -47,7 +45,7 @@
                                 <input type="button" class="btn-search" value="Tìm Kiếm">
                             </div>
                             <div class="bd"></div>
-                            <div class="adv"><a href="#"><i class="fas fa-shopping-basket color"></i></div></a>
+                            <div class="adv"><a href="#" target="_blank"><i class="fas fa-shopping-basket color"></i></a></div>
                             <div class="bd"></div>
                             <div class="adv adv-user"><i class="fas fa-user color"></i>
                                 <input type="checkbox" class="check-tog">
@@ -61,20 +59,23 @@
                     </div>
                 </div>
             </div>
-            <div class="header-slider">
-                <img src="assets/images/img_bg.png" alt="abc">
-                <div class="slogan">
-                    <h3>Dumbbells Shop</h3>
-                    <h4>Best body fitness</h4>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer</p>
-                    <button><a href="#">SHOP NOW</a></button>
+            <a href="#products" target="_parent" class="banner" class="banner-link">
+                <div class="header-slider">
+                    <img src="assets/images/img_bg.png" alt="abc">
+                    <div class="slogan">
+                        <h3>Dumbbells Shop</h3>
+                        <h4>Best body fitness</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                            the industry's standard dummy text ever since the 1500s, when an unknown printer</p>
+                        <button>SHOP NOW</button>
+                    </div>
                 </div>
-            </div>
+            </a>
         </div>
-        <!--------------------------------END HEADER------------------------------------->
+        <!--__________________END HEADER________________-->
 
-        <!--------------------------------START INTRODUCE-------------------------------->
+        <!--__________________START INTRODUCE________________-->
+
         <div class="introduce">
             <div class="container">
                 <div class="row">
@@ -83,16 +84,22 @@
                             <img src="assets/images/dumbbell-img.jpg" alt="">
                         </div>
                         <div class="dumbell-icon">
+                            <img src="assets/images/bg-intro1.png" class="bg" alt="">
                             <img src="assets/images/dumbell-icon.png" alt="">
-                            <h3>DUMBBELLS</h3>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="intro-text">
+                                <h3>DUMBBELLS</h3>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            </div>
                         </div>
                     </div>
                     <div class="sub-intro strength">
                         <div class="strength-icon">
+                            <img src="assets/images/bg-intro1.png" class="bg" alt="">
                             <img src="assets/images/strength-icon.png" alt="">
-                            <h3>STRENGTH</h3>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="strength-text">
+                                <h3>STRENGTH</h3>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            </div>
                         </div>
                         <div class="strength-img">
                             <img src="assets/images/strength-img.jpg" alt="#">
@@ -104,19 +111,23 @@
                             <img src="assets/images/power-img.jpg" alt="#">
                         </div>
                         <div class="power-icon">
+                            <img src="assets/images/bg-intro1.png" class="bg" alt="">
                             <img src="assets/images/power-icon.png" alt="#">
-                            <h3>Power rack & cages</h3>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="power-text">
+                                <h3>Power rack & cages</h3>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!--------------------------------END INTRODUCE-------------------------------->
+        <!--__________________END INTRODUCE________________-->
+
 
         <div class="content">
             <div class="container">
-                <div class="products">
+                <div class="products" id="products">
                     <div class="products-bar">
                         <input type="radio" name="bar" value="top-sellers" class="tsl" checked="checked">
                         <button class="btn1">TOP SELLERS</button>
@@ -128,7 +139,8 @@
                         <div class="line-active"></div>
                     </div>
                     <div class="products-product">
-                        <!----------------------------------PRODUCTS_TOP SELLERS--------------------------------->
+                        
+                         <!--__________________TOP SELLERS________________-->
                         <div class="row row-top__sellers">
                             <div class="pr">
                                 <div class="pr-img">
@@ -253,9 +265,11 @@
                                 </div>
                             </div>
                         </div>
-                        <!----------------------------------PRODUCTS_TOP SELLERS END--------------------------------->
+                         <!--__________________TOP-SELLERS END________________-->
 
-                        <!------------------------------------PRODUCTS_FEATURED-------------------------------------->
+
+                        <!--__________________PRODUCT FEATURED________________-->
+
                         <div class="row row-featured">
                             <div class="pr">
                                 <div class="pr-img">
@@ -334,9 +348,10 @@
                                 </div>
                             </div>
                         </div>
-                        <!------------------------------------PRODUCTS_FEATURED END---------------------------------->
+                                <!--__________________PRODUCT-FEATURED END________________-->
 
-                        <!------------------------------------PRODUCTS_MOST REVIEWS---------------------------------->
+                                <!--__________________PRODUCT MOST REVIEWS________________-->
+
                         <div class="row row-most__reviews">
                             <div class="pr">
                                 <div class="pr-img">
@@ -415,14 +430,16 @@
                                 </div>
                             </div>
                         </div>
-                        <!------------------------------------PRODUCTS_MOST REVIEWS END------------------------------>
+                        <!--__________________PRODUCT MOST REVIEWS END________________-->
+
 
                     </div>
                 </div>
             </div>
-        <!---------------------------------END PRODUCTS-------------------------------------->
-                                        <!---************--->
-        <!---------------------------------START CLIENT SAY -------------------------------->
+                    <!--__________________END PRODUCTS________________-->
+
+                                        <!--************-->
+            <!--__________________START CLIENTS SAY_______________-->
         <div class="container">
                 <div class="client-say">
                     <div class="slider">
@@ -499,7 +516,7 @@
                                 <div class="auto-btn3"></div>
                             </div>
     
-                            <!---Automatic Navigation-->
+                            <!--Automatic Navigation-->
                             
                             
                             <div class="navigation-manual">
@@ -512,9 +529,10 @@
                     </div>
                 </div>
             </div>
-        <!------------------------------------END SAY CLIENT--------------------------------->
+            <!--__________________END CLIENTS SAY________________-->
+
             
-        <!--------------------------------------START BRAND---------------------------------->
+            <!--__________________ABOUT BRANDS________________-->
             <div class="brands">
                 <div class="container">
                     <div class="line-footer"> </div>
@@ -529,9 +547,10 @@
                 </div>
             </div>
         </div>
-        <!--------------------------------END CONTENT---------------------------------------->
+        <!--__________________END CONTENTS_______________-->
 
-        <!---------------------------------START FOOTER-------------------------------------->
+
+        <!--__________________START FOOTER________________-->
         <div class="footer">
             <div class="container">
                 <div class="footer-top">
@@ -555,40 +574,41 @@
                     <div class="row row__footer-mid">
                         <div class="contact">
                             <h3>contact us</h3>
-                            <p><i class="fas fa-map-marker-alt"></i> 200 Lincoln Ave, Salinas, CA 93901</p>
-                            <p><i class="fas fa-phone"></i> 023 32423 223</p>
-                            <p><i class="fas fa-envelope"></i> gymax@example.com</p>
-                            <p><i class="fas fa-clock"></i> 9:00 - 20:00 All day</p>
+                            <a href="#"><i class="fas fa-map-marker-alt"></i> 200 Lincoln Ave, Salinas, CA 93901</a>
+                            <a href="tel:+0233423223" ><i class="fas fa-phone"></i> 023 32423 223</a>
+                            <a href="mailto:gymax@example.com"><i class="fas fa-envelope"></i> gymax@example.com</a>
+                            <a href="#"><i class="fas fa-clock"></i> 9:00 - 20:00 All day</a>
                         </div>
                         <div class="myaccount">
                             <h3>my account</h3>
-                            <a href="#"><p>My account</p></a>
-                            <a href="#"><p>check out</p></a>
-                            <a href="#"><p>register</p></a>
-                            <a href="#"><p>Login</p></a>
+                            <a href="#">My account</a>
+                            <a href="#">check out</a>
+                            <a href="#">register</a>
+                            <a href="#">Login</a>
                         </div>
                         <div class="information">
                             <h3>information</h3>
-                            <a href="#"><p>About us</p></a>
-                            <a href="#"><p>Contact us</p></a>
-                            <a href="#"><p>Terms of user</p></a>
-                            <a href="#"><p>Privacy Policy</p></a>
+                            <a href="#">About us</a>
+                            <a href="#">Contact us</a>
+                            <a href="#">Terms of user</a>
+                            <a href="#">Privacy Policy</a>
                         </div>
                         <div class="qlink">
                             <h3>quick link</h3>
-                            <a href="#" target="_blank"><p> New user</p></a>
-                            <a href="#" target="_blank"><p>Help center</p></a>
-                            <a href="#" target="_blank"><p>Report spam</p></a>
-                            <a href="#" target="_blank"><p>FAQs</p></a>
+                            <a href="#" target="_blank"> New user</a>
+                            <a href="#" target="_blank">Help center</a>
+                            <a href="#" target="_blank">Report spam</a>
+                            <a href="#" target="_blank">FAQs</a>
                         </div>
                     </div>
                 </div>  
             </div>
         </div>
         <div class="footer__bot">
-            <p>Copyright &copy 2019 Gymax - Design by ArrowHitech - All Rights Reserved</p>
+            <p>Copyright &copy; 2019 Gymax - Design by ArrowHitech - All Rights Reserved</p>
         </div>
-        <!-----------------------------------END FOOTER-------------------------------------->
+        <!--__________________END FOOTER________________-->
+
     </div>
 </body>
 

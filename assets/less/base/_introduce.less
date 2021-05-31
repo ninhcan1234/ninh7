@@ -5,10 +5,13 @@
     left: 4px;
     
     .container{  
-    border-left: 1px @cl-border solid;
-    border-right: 1px @cl-border solid;
-    border-bottom: 1px @cl-border solid;
-    background-image: url('../images/bg-intro.png');
+
+    .row{
+        border-left: 1px #cccccc solid;
+        border-right: 1px #cccccc solid;
+        border-bottom: 1px @cl-border solid;
+        box-shadow: 1px 1px 1px 1px #cccccc;
+    }
     }
     
 }
@@ -122,6 +125,9 @@
     .introduce{
         left:0px;
         height: auto;
+        .row{
+            margin:0;
+        }
     }
     .strength .strength-icon img:nth-child(2),.dumbbells .dumbell-icon img:nth-child(2),.power .power-icon img:nth-child(2){
         width: 13.6%;
@@ -136,31 +142,27 @@
 }
 @media screen and (max-width:1024px){
     .introduce{
-        bottom: 20px;
+        bottom: 10px;
     }
 }
 //------------------------------------------
 
 /*FOR..............*/
 
-@media screen and (max-width:768px){
-    .introduce{
-        bottom: 0;
-        margin-bottom: 30px;
-        .row{
-            flex-wrap: wrap;
-            flex-direction: column;
-            .sub-intro{
-                flex-direction: row;
-                width: 100%;
-                &>div{
-                    width: 50%;
-                }
-            }
+@media screen and (max-width:769px){
+    .introduce .container .row {
+        flex-direction: column;
+    }
+    .introduce .container .row .sub-intro{
+        flex-direction: row;
+        width: 100%;
+        &>div {
+            width:50%;
         }
     }
+
 }
-@media screen and(min-width:769px) and (max-width:985px){
+@media screen and(min-width:770px) and (max-width:985px){
     .dumbell-icon .intro-text, .strength-icon .strength-text, .power-icon .power-text{
         transform: scale(0.9);
         bottom:-1.5%;
@@ -168,50 +170,50 @@
 }
 
 
-//------------------------------------------
-
-/*FOR..............*/
-@media screen and (max-width:600px){
-    .introduce{
-        .row{
-            flex-direction: column;
-            align-items: center;
-            .sub-intro{
-                flex-direction: column;
-                width: 97%;
-                border:1px solid @cl-border;
-                &>div{
-                    width: 100%;
-                }
-                div:nth-child(2)>div{
-                    width: 100%;
-                }
-                .strength-icon .strength-text{
-                    width: 100%;
-                }
-                .strength-img{
-                    order: 1;
-                }
-                .strength-icon{
-                    order:2;
-                }
-            }
-        }
-    }
-}
-@media screen and (min-width:480px) and (max-width:600px){
-    .strength .strength-icon img:nth-child(2), .dumbbells .dumbell-icon img:nth-child(2), .power .power-icon img:nth-child(2){
-        margin-top:60px;
-    }
-}
-@media screen and(min-width:601px) and (max-width:660px){
+@media screen and (max-width:690px){
     .dumbell-icon .intro-text, .strength-icon .strength-text, .power-icon .power-text {
         bottom:4.5%;
     }
+    .strength .strength-icon img:nth-child(2), .dumbbells .dumbell-icon img:nth-child(2), .power .power-icon img:nth-child(2){
+        margin-top:10px;
+    }
+}
+//------------------------------------------
+
+/*FOR..............*/
+
+@media screen and (max-width:555px){
+    .introduce .container .row .sub-intro{
+        flex-direction: column;
+        border:1px solid @cl-border;
+    }
+    .introduce .container .row .sub-intro > div{
+        width: 100%;
+    }
+        .strength-icon .strength-text{
+            width: 100%;
+        }
+        .strength .strength-img {
+            order: 1;
+        }
+        .strength  .strength-icon{
+            order:2;
+        }
+        .strength .strength-icon img:nth-child(2), .dumbbells .dumbell-icon img:nth-child(2), .power .power-icon img:nth-child(2){
+            margin-top:20px;
+        }
+        .dumbell-icon .intro-text, .strength-icon .strength-text, .power-icon .power-text {
+            bottom:16.5%;
+        }
 }
 
-@media screen and (max-width: 348px){
+
+@media screen and (max-width: 375px){
     .strength .strength-icon img:nth-child(2), .dumbbells .dumbell-icon img:nth-child(2), .power .power-icon img:nth-child(2){
         margin-top:0;
     }
+    .dumbell-icon .intro-text, .strength-icon .strength-text, .power-icon .power-text {
+        bottom:10%;
+    }
 }
+

@@ -60,9 +60,8 @@
 
     //--------INFORMATION ABOUT US----------
     .footer-mid{
-        height: 315px;
+        padding: 71px 0 54px 0;
         .row__footer-mid{
-            padding-top: 71px;
             div{
                 width: 25%;
                 h3{
@@ -141,8 +140,7 @@
 .footer__bot{
     background-color: @black;
     width: 100% ;
-    height: 50px;
-    line-height: 50px;
+    padding: 14px 0;
     p{
         font-family: 'Poppins-regular';
         font-weight: 400;
@@ -170,14 +168,14 @@
 }
 
 @media screen and (max-width:1025px){
-    
     .footer .footer-mid{
-       height: 560px;
+        padding: 30px 30px;
     }
+    
     .footer .footer-mid .row__footer-mid div{
-        width: 45%;
+        width: 50%;
         text-align: center;
-        height: 250px;
+        margin-bottom: 20px;
         h3,p{
             transform: unset;
         }
@@ -187,9 +185,6 @@
     }
     .footer__bot p{
         text-align: center;
-    }
-    .footer .footer-mid .row__footer-mid {
-        justify-content: center;
     }
     
     .footer .footer-mid .row__footer-mid div a{
@@ -221,10 +216,8 @@
 @media screen and (max-width:768px){
 
     .footer .footer-mid .row__footer-mid div{
-        width: 45%;
-        margin-top: 30px;
+        width: 50%;
         text-align: center;
-        height: auto;
     }
     .footer .footer-mid .row__footer-mid div{
         width: 50%;
@@ -233,9 +226,6 @@
         transform: unset;
     }
    
-    .footer .footer-mid .row__footer-mid {
-        padding-top: 50px;
-    }
     .footer .footer-mid .row__footer-mid .contact a:nth-of-type(n) {
         transform: translate(0px, 15px);
     }
@@ -246,17 +236,9 @@
 //FOR................
 @media screen and (max-width:600px){
     .footer .footer-mid .row__footer-mid div{
-        margin-top: 30px;
         width: 100%;
     }
 
-    .footer .footer-mid{
-       height: 980px;
-    }
-    .footer .footer-mid .row__footer-mid {
-        padding-top: 30px;
-    }
-    
 }
 //------------------------
 
@@ -264,10 +246,6 @@
 @media screen and (max-width:480px){
     .footer-top{
         height: 420px;
-    }
-    .footer__bot{
-        height: 50px;
-        line-height: 24px;
     }
     .footer .line-footer{
         transform: translateY(50px);

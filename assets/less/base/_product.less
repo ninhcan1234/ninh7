@@ -34,22 +34,17 @@
     display: flex;
     flex-direction: column;
   }
-  .row {
-    margin-top: 35.6px;
-
-    +.row {
-      margin-top: 45px;
-    }
-  }
+ 
   width: 100%;
 //-------TAB-BAR__PRODUCT---------
   .products-bar {
     position   : relative;
     margin-top: 15px;
+    margin-bottom: 41px;
     .line-active{
       position: absolute;
       bottom: 0;
-      left: -12px;
+      left: 0;
       width: 145px;
       height: 2px;
       background-color: red;
@@ -71,14 +66,14 @@
     .ft{
       left:150px;
       &:checked~ .line-active{
-          left:141px;
+          left:122px;
         }
     }
 
     .mrv{
       left:280px;
       &:checked ~ .line-active{
-        left:292px;
+        left:271px;
       }
     }
     
@@ -111,42 +106,36 @@
   }
 }
 .products-product{
-  transform: translate(4px,5px);
+  margin:0 -15px;
   .row-featured,.row-most__reviews{
     display: none;
   }
-
   .row{
-    margin-left:-30px;
-    margin-right:-30px;
+    transform: translateX(5px);
   }
-  .row:nth-child(2)>.pr:nth-child(3) img{
-    transform: translateY(-5px);
-  }
-  .row:nth-child(2)>.pr:nth-child(4) img{
-    transform: translateY(2px);
-  }
+
 }
 
 .pr {
   width : 25%;
   height: 330px;
   padding: 0 15px;
-  +:nth-child(7){
-    img{
-      transform: translateY(1px);
-    }
-  }
-  &:hover {
+  margin-bottom: 45px;
+
+  &:hover .item {
     border: 1px @cl-border ridge;
     transition: 1s;
+    box-shadow:1px 1px 1px  @cl-border ;
+    height: inherit;
   }
 
   img {
     width : 100%;
     height: auto;
   }
-
+  &:nth-child(7) .pr-img img{
+    transform: translateY(-5px);
+  }
   p,
   span {
     margin-left: 30px;
@@ -260,7 +249,7 @@
 
 
   .expression{
-    margin-top: 95px;
+    margin-top: 44px;
     h3{
       font-family: 'Poppins-bold';
       font-weight: 700;
@@ -315,26 +304,19 @@
 
 //-------------------------------BRAND-----------
 .brands{
-  margin-top:150px;
-  height: 151px;
+  margin-top:147px;
   .line-footer{
     height: 1px;
     background: @cl-line;
     width: 100%;
-    margin-top:-2px;
 }
   .row-brands{
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    margin-left:-15px;
-    margin-right:-15px;
-    margin-top:4px;
   }
   .brand{
     padding:0 15px;
     display: flex;
-    max-width: 170px;
     width: @width-brand ;
     align-items: center;
     justify-content: center;
@@ -345,12 +327,12 @@
       height: auto;
     }
   }
-  .br1 img{transform: translate(1px, -1px);}
-  .br2 img{transform: translate(2px, -1px);}
-  .br3 img{transform: translate(2px, -1px);}
-  .br4 img{transform: translate(1px, -1px);}
-  .br5 img{transform: translate(2px, -1px);}
-  .br6 img{transform: translate(1px, -1px);}
+  .br1 img{transform: translate(-11px, -1px);}
+  .br2 img{transform: translate(-5px, -1px);}
+  .br3 img{transform: translate(0px, -1px);}
+  .br4 img{transform: translate(4px, -1px);}
+  .br5 img{transform: translate(10px, -1px);}
+  .br6 img{transform: translate(14px, -1px);}
 
 }
 //END BRAND------------------------------------------------------------------
@@ -360,9 +342,6 @@
 
 //FOR...............
 @media screen and (max-width:1024px){
-  .products-product .row{
-    justify-content: center;
-}
   .pr{
     width: calc(270%/11.7);
   }
@@ -373,7 +352,6 @@
     height: auto;
   }
   .brands .brand {
-    max-width: 270px;
     width: calc(100%/3);
     height: 150px;
 }
@@ -389,21 +367,12 @@
   }
   
   .pr{
-    width: 43%;
+    width: 50%;
     margin-top:30px;
     height: auto;
   }
-  .brands .row-brands{
-    justify-content: center;
-
-  }
   .brands .brand{
-    max-width: 250px;
-    width: 100%;
-    height: 200px;
-    img{
-      width: 70%;
-    }
+    width: 50%;
   }
 }
 
@@ -411,14 +380,7 @@
 
 //FOR...............
 @media screen and (max-width:600px){
-  .brands .brand{
-    max-width: 250px;
-    width: 40%;
-    height: 150px;
-    img{
-      width: 70%;
-    }
-  }
+  
 }
 
 //------------------------------------
@@ -454,45 +416,50 @@
     left:240px;
   }
   .pr{
-    width: 90%;
-    margin-top:30px;
-  }
-  .brands{
-    height:900px;
-  }
-  .brands .brand{
-    max-width: 270px;
     width: 100%;
+    margin-top:30px;
   }
  
 }
 //------------------------------------
 
 //FOR...............
-@media screen and (max-width:375px){
+@media screen and (max-width:376px){
   .products .products-bar .line-active{
     width: 103px;
   }
 
-  .products .products-bar button {
-    font-size: 17px;
+  .products .products-bar button{
+      font-size: 15px;
   }
   .products .products-bar .mrv:checked ~ .line-active {
     left: 229px;
-}
-.products .products-bar{
-  margin-left:-15px;
-  margin-right:-15px;
-}
+  }
+  .products .products-bar{
+    margin-left:-15px;
+    margin-right:-15px;
+  }
+  .products .products-bar input{
+    width: 100px;
+  }
+  .products .products-bar .ft {
+    left: 95px;
+  }
+  .products .products-bar .mrv {
+    left: 200px;
+  }
+  .products .products-bar .ft:checked ~ .line-active {
+    left: 94px;
+  }
+  .products .products-bar .mrv:checked ~ .line-active {
+    left: 201px;
+  }
 
 }
 //------------------------------------
 
 //FOR...............
 @media screen and (max-width:320px){
-  .products .products-bar button {
-    font-size: 15px;
-  }
   .products .products-bar .line-active {
     width: 95px;
   }
@@ -502,12 +469,18 @@
   .products .products-bar .mrv:checked ~ .line-active {
     left: 205px;
   }
+  .brands .brand{
+    width: 100%;
+  }
+  .brands .row-brands {
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width:1900px){
   .products-product .row {
-    margin-left: -15px;
-    margin-right: -15px;
+    margin:0;
+    transform: unset;
   }
   .client-say .navigation-manual, .client-say .navigation-auto {
     left: 50%;

@@ -1,4 +1,8 @@
 .products {
+
+  .container{
+    box-sizing: content-box;
+  }
   .pr .pr-img {
     position: relative;
     .product-advance{
@@ -31,7 +35,7 @@
     }
   }
   .pr:hover .product-advance{
-    display: flex;
+    .display-flex;
     flex-direction: column;
   }
  
@@ -59,7 +63,7 @@
     .tsl{
       left:25px;
       &:checked ~ .line-active{
-          left:-12px;
+          left:3px;
         }
     }
 
@@ -81,8 +85,6 @@
       height: 1px;
       background: @cl-line;
       margin-top: 13px;
-      margin-left:-15px;
-      margin-right: -15px;
   }
  
     .fa-grip-lines-vertical{
@@ -94,11 +96,10 @@
     button {
       text-transform  : uppercase;
       font-family: 'Poppins-bold';
-      font-weight: 700;
       font-size       : 18px;
       background-color: transparent;
       outline         : none;
-      margin-left: 6px;
+      margin-left: 21px;
       ~button {
         margin-left: 31px;
       }
@@ -106,12 +107,11 @@
   }
 }
 .products-product{
-  margin:0 -15px;
   .row-featured,.row-most__reviews{
     display: none;
   }
   .row{
-    transform: translateX(5px);
+    .transform-translateX(5px);
   }
 
 }
@@ -134,7 +134,7 @@
     height: auto;
   }
   &:nth-child(7) .pr-img img{
-    transform: translateY(-5px);
+    .transform-translateY(-5px);
   }
   p,
   span {
@@ -144,20 +144,17 @@
   }
 
   p {
-    font-family: 'Poppins-regular';
-    font-weight: 400;
     margin-top : 18px;
   }
 
   span {
     font-family: 'Poppins-bold';
-    font-weight: 700;
   }
 }
 
 //SLIDER------------CLIENT_SAY-------------
 .client-say{
-	display: flex;
+	.display-flex;
 	align-items: center;
 	justify-content: center;
   width: 100%;
@@ -168,7 +165,7 @@
 	  border-radius: 10px;
 	  overflow: hidden;
     .clients{
-      display: flex;
+      .display-flex;
       width: 500%;
       input{
         display: none;
@@ -182,11 +179,11 @@
   .navigation-manual{
     position: absolute;
     width: 100px;
-    bottom: -49px;
-    display: flex;
+    bottom: -48px;
+    .display-flex;
     cursor: pointer;
     justify-content: center;
-    left:524px;
+    left:539px;
     .manual-btn{
       border:1px solid @cl-border;
       padding:4px;
@@ -199,11 +196,11 @@
   .navigation-auto{
     position: absolute;
     width: 100px;
-    bottom: -49px;
-    display: flex;
+    bottom: -48px;
+    .display-flex;
     cursor: pointer;
     justify-content: center;
-    left:524px;
+    left:539px;
     div{
       border:1px solid @cl-border;
       padding:4px;
@@ -252,7 +249,6 @@
     margin-top: 44px;
     h3{
       font-family: 'Poppins-bold';
-      font-weight: 700;
       font-size: 36px;
       text-align: center;
       margin-left: 9px;
@@ -265,15 +261,13 @@
   }
   .expresser-said{
     text-align: center;
-    margin-top: 19px;
+    margin-top: 16px;
     p{
       width: 770px;
       height: 45px;
       line-height: 30px;
-      font-family: 'Poppins-regular';
       font-size: 18px;
       display: inline-block;
-      font-weight: 400;
       color: @cl-btn;
       margin-top: -1px;
       margin-left: 7px;
@@ -282,18 +276,15 @@
   }
   p.expresser-name{
     font-family: 'Poppins-bold';
-    font-weight: 700;
     font-size: 18px;
     text-align: center;
     margin-left: 9px;
-    margin-top: 31px;
+    margin-top: 29px;
   }
   .expresser-congratulation{
     text-align: center;
-    margin-top: 8px;
+    margin-top: 3px;
     p{
-      font-family: 'Poppins-regular';
-      font-weight: 400;
       font-size: 14px;
       display: inline-block;
       margin-left: 8px;
@@ -305,18 +296,20 @@
 //-------------------------------BRAND-----------
 .brands{
   margin-top:147px;
+  .container{
+    box-sizing: content-box;
+  }
   .line-footer{
     height: 1px;
     background: @cl-line;
-    width: 100%;
 }
   .row-brands{
-    display: flex;
+    .display-flex;
     flex-wrap: wrap;
   }
   .brand{
     padding:0 15px;
-    display: flex;
+    .display-flex;
     width: @width-brand ;
     align-items: center;
     justify-content: center;
@@ -327,12 +320,12 @@
       height: auto;
     }
   }
-  .br1 img{transform: translate(-11px, -1px);}
-  .br2 img{transform: translate(-5px, -1px);}
-  .br3 img{transform: translate(0px, -1px);}
-  .br4 img{transform: translate(4px, -1px);}
-  .br5 img{transform: translate(10px, -1px);}
-  .br6 img{transform: translate(14px, -1px);}
+  .br1 img{.transform-translateX(1px);}
+  .br2 img{.transform-translateX(2px);}
+  .br3 img{.transform-translateX(2px);}
+  .br4 img{.transform-translateX(1px);}
+  .br5 img{.transform-translateX(2px);}
+  .br6 img{.transform-translateX(1px);}
 
 }
 //END BRAND------------------------------------------------------------------
@@ -342,11 +335,11 @@
 
 //FOR...............
 @media screen and (max-width:1024px){
-  .pr{
-    width: calc(270%/11.7);
+  .products .container,.brands .container{
+    box-sizing: border-box;
   }
   .brands .brand img{
-    transform:translate(0,0);
+    .transform-translate(0,0);
   }
   .brands{
     height: auto;
@@ -478,12 +471,12 @@
 }
 
 @media screen and (max-width:1900px){
+  
   .products-product .row {
-    margin:0;
     transform: unset;
   }
   .client-say .navigation-manual, .client-say .navigation-auto {
     left: 50%;
-    transform: translateX(-50%);
+    .transform-translateX(-50%);
 }
 }

@@ -16,23 +16,19 @@
             h3 {
                 font-size  : 60px;
                 font-family: 'Poppins-bold';
-                font-weight: 700;
             }
 
             h4 {
                 font-size  : 40px;
                 font-family: 'Poppins-bold';
-                font-weight: 700;
-                transform  : translate(0, -15%);
+                .transform-translate(0, -15%);
             }
 
             p {
                 width      : 532px;
-                font-family: 'Poppins-regular';
-                font-weight: 400;
                 font-size  : 14px;
                 line-height: 24px;
-                transform  : translate(0.6%, 14%);
+                .transform-translate(0.6%, 14%);
             }
 
             span {
@@ -40,9 +36,7 @@
                 background-color: rgba(0, 0, 0, 0.1);
                 border          : 1px solid @cl-border;
                 padding         : 14px 46px;
-                transform       : translate(2%, 127%);
-                font-family: 'Poppins-regular';
-                font-weight: 400;
+                .transform-translate(2%, 127%);
                 font-size  : 14px;
                 color      : @white;
                 
@@ -65,7 +59,7 @@
 
             .nav-logo{
                 padding-top: 24px;
-                padding-left: 5px;
+                padding-left: 20px;
                 img {
                     display: block;
                     width    : auto;
@@ -75,12 +69,10 @@
         }
 
         .nav-nav {
-            font-family: 'Poppins-regular';
-            font-weight: 400;
             font-size  : 16px;
 
             ul {
-                display   : flex;
+                .display-flex;
                 flex-wrap: wrap;
                 padding-top: 40px;
 
@@ -120,18 +112,19 @@
         
 //--------MAIN NAVIGATION ADVANCE FOR CUSTOMER 
         .nav-advance {
-            display   : flex;
-            padding-top: 44px;
+            .display-flex;
+            padding-top: 41px;
+            padding-right: 15px;
             div { 
                 margin-left: 25px; 
                 &:nth-child(3){
-                    transform: translateX(2px);
+                    .transform-translateX(2px);
                 }
                 &:nth-child(4){
-                    transform: translateX(3px);
+                    .transform-translateX(3px);
                 }
                 &:nth-child(5){
-                    transform: translateX(4px);
+                    .transform-translateX(4px);
                 }
             
             }
@@ -193,7 +186,7 @@
                         left:0;
                         transition: all 0.1s ease-in;
                         li{
-                            transform: translateX(0);
+                            .transform-translateX(0);
                             &:hover{
                                 background: lightblue;
                             }
@@ -220,7 +213,7 @@
                         height: 28px;
                         text-align: center;
                         line-height: 28px;
-                        transform: translateX(50px);
+                        .transform-translateX(50px);
                         border-radius: 10px;
                         a{
                             width:  inherit;
@@ -267,7 +260,7 @@
 @media screen and (max-width:1919px){
     .header .header-slider .slogan {
         top:50%;
-        transform: translateY(-50%);
+        .transform-translateY(-50%);
         left:10%;
     }
     .header .header-slider img{
@@ -283,6 +276,9 @@
     .header {
         .header-nav {
             height: 115px;
+            .container{
+                .box-sizing(border-box);
+            }
             .row {
                 flex-direction: column;
                 align-items   : center;
@@ -385,7 +381,7 @@
 }
 .toggle:checked + .nav-nav {
     visibility:visible;
-    display: flex;
+    .display-flex;
     background:rgba(36, 37, 35, 0.9);
     transform:unset;
     width: 100%;
@@ -402,7 +398,7 @@
         text-align: center;
         margin-top:50px;
         li:nth-child(n) { 
-            transform: translateX(0);
+            .transform-translateX(0);
             transition: all 0.6s ease;
         }
     }

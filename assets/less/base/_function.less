@@ -13,15 +13,60 @@
 @cl-bg-white:#ffffff;
 @cl-bg-black:#222222;
 @cl-font:#6e6e6e;
+//Font-face-----------------------
+@font-face {
+	font-family: 'Poppins-bold';
+	src: url(../font/Poppins-Bold.ttf);
+}
+@font-face {
+	font-family: 'Poppins-regular';
+	src: url(../font/Poppins-Regular.ttf);
+}
+
+//----------------------------------
 body{
 	overflow-x: hidden;
+	font-family: 'Poppins-regular';
 }
-//-------------------------------
+//-webkit-moz-----------------------
+.display-flex(){
+	display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+}
+
+
+.transform-translateX(@_x){
+	-webkit-transform:translateX(@_x);
+	-ms-transform:translateX(@_x);
+	transform:translateX(@_x);
+}
+
+.transform-translateY(@_y){
+	-webkit-transform:translateY(@_y);
+	-ms-transform:translateY(@_y);
+	transform:translateY(@_y);
+}
+
+.transform-translate(@_x,@_y){
+	-webkit-transform:translate(@_x,@_y);
+	-ms-transform:translate(@_x,@_y);
+	transform:translate(@_x,@_y);
+}
+
+
+
+.box-sizing(@_b){
+	-webkit-box-sizing:@_b;
+	box-sizing:@_b;
+}
+
 //FORMAT-------------------------
 * {
 	margin:0;
 	padding : 0;
-	box-sizing: border-box;
+	.box-sizing(border-box);
 	list-style     : none;
     text-decoration: none;
 	border:0;
@@ -45,7 +90,7 @@ body{
 	background: #b30000; 
   }	
 .row {
-    display  : flex;
+    .display-flex();
     flex-wrap: wrap;
 	margin: 0 -15px;
 }
@@ -53,19 +98,13 @@ body{
 .container {
     max-width : 1170px;
     width     : 100%;
-    box-sizing: border-box;
     margin    : 0 auto;
 	padding: 0 15px;
+	box-sizing: content-box;
 }
 
-@font-face {
-	font-family: 'Poppins-bold';
-	src: url(../font/Poppins-Bold.ttf);
-}
-@font-face {
-	font-family: 'Poppins-regular';
-	src: url(../font/Poppins-Regular.ttf);
-}
 
+	
+	
 
 

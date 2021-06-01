@@ -5,12 +5,13 @@
     left: 4px;
     
     .container{  
-
+        box-sizing: content-box;
     .row{
         border-left: 1px #cccccc solid;
         border-right: 1px #cccccc solid;
         border-bottom: 1px @cl-border solid;
         box-shadow: 1px 1px 1px 1px #cccccc;
+        margin:0;
     }
     }
     
@@ -18,17 +19,14 @@
 
 .sub-intro{
     width: calc(100%/3);
-    display: flex;
+    .display-flex;
     flex-direction: column;
     h3{
         font-family: 'Poppins-bold';
-        font-weight: 700;
         font-size: 18px;
         text-transform: uppercase;
     }
     p{
-        font-family: 'Poppins-regular';
-        font-weight: 400;
         font-size: 14px;
         width: 80%;
         text-align: center;
@@ -140,10 +138,14 @@
         width: 20%;
     }
 }
-@media screen and (max-width:1024px){
+@media screen and (max-width:1025px){
     .introduce{
         bottom: 10px;
     }
+    .introduce .container{
+        box-sizing: border-box;
+    }
+    
 }
 //------------------------------------------
 

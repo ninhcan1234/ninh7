@@ -1,7 +1,7 @@
-window.onload=function(){
-    var a = document.querySelector('.tsl');
-    var b = document.querySelector('.ft');
-    var c = document.querySelector('.mrv');
+window.onload = function(){
+    var a = document.querySelector('.top-sellers');
+    var b = document.querySelector('.features');
+    var c = document.querySelector('.most-reviews');
     var r = document.querySelector('.row-top__sellers');
     var rr = document.querySelector('.row-featured');
     var rrr = document.querySelector('.row-most__reviews');

@@ -1,6 +1,5 @@
 .introduce{
     position: relative;
-    height: 500px;
     bottom: 82px;
     left: 4px;
     
@@ -20,7 +19,7 @@
 .sub-intro{
     width: calc(100%/3);
     .display-flex;
-    flex-direction: column;
+    .flex-direction-cl;
     h3{
         font-family: 'Poppins-bold';
         font-size: 18px;
@@ -39,31 +38,31 @@
     .intro-text,.strength-text,.power-text{
         position: absolute;
         text-align: center;
-        p{ padding-top:15px;}
+        p{ padding-top:17px;}
     }
     .intro-text{
-        bottom:16.5%;
+        bottom:44px;
         h3{ padding-right: 2px; }
     }
 
     .strength-text{
-        bottom:15.4%;
+        bottom:38px;
     }
 
     .power-text{
-        bottom:16.5%;
+        bottom:44px;
         h3{ word-spacing: -1px; }
     }
 }
 
+.dumbbell-img,.strength-img,.power-img{
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
 
 .dumbbells{
-    .dumbbell-img{
-        img{
-            width: 100%;
-            height: 100%;
-        }   
-    } 
     .dumbell-icon{
         img:nth-child(1){
             width:100%;
@@ -72,17 +71,12 @@
         img:nth-child(2){
             position: absolute;
             left: 40.7%;
-            top: 18%;
+            top: 17%;
         }
     }
 }
+
 .strength{
-    .strength-img{
-        img{
-            width: 100%;
-            height: 100%;
-        }   
-    }
     .strength-icon{
         img:nth-child(1){
             width: 100%;
@@ -97,12 +91,6 @@
     
 }
 .power{
-    .power-img{
-        img{
-            width: 100%;
-            height: 100%;
-        }   
-    } 
     .power-icon{
         img:nth-child(1){
             width: 100%;
@@ -111,7 +99,7 @@
         img:nth-child(2){
             position: absolute;
             left: 43.1%;
-            top: 11.2%;
+            top: 27px;
         }
     }
     
@@ -127,23 +115,27 @@
             margin:0;
         }
     }
-    .strength .strength-icon img:nth-child(2),.dumbbells .dumbell-icon img:nth-child(2),.power .power-icon img:nth-child(2){
+
+    .strength .strength-icon img:nth-child(2),
+    .dumbbells .dumbell-icon img:nth-child(2),
+    .power .power-icon img:nth-child(2){
         width: 13.6%;
-        top:0;
-        margin-top:20px;
-        left:50%;
+        top: 0;
+        margin-top: 20px;
+        left: 50%;
         transform: translateX(-50%);
     }
+
     .dumbbells .dumbell-icon img:nth-child(2){
         width: 20%;
     }
 }
-@media screen and (max-width:1025px){
+@media screen and (max-width:1224px){
     .introduce{
         bottom: 10px;
-    }
-    .introduce .container{
-        box-sizing: border-box;
+        .container{
+            .box-sizing(border-box);
+        }
     }
     
 }
@@ -153,10 +145,10 @@
 
 @media screen and (max-width:769px){
     .introduce .container .row {
-        flex-direction: column;
+        .flex-direction-cl;
     }
     .introduce .container .row .sub-intro{
-        flex-direction: row;
+        .flex-direction-r;
         width: 100%;
         &>div {
             width:50%;
@@ -165,18 +157,25 @@
 
 }
 @media screen and(min-width:770px) and (max-width:985px){
-    .dumbell-icon .intro-text, .strength-icon .strength-text, .power-icon .power-text{
+    .dumbell-icon .intro-text, 
+    .strength-icon .strength-text, 
+    .power-icon .power-text{
         transform: scale(0.9);
-        bottom:-1.5%;
+        bottom: -1.5%;
     }
 }
 
 
 @media screen and (max-width:690px){
-    .dumbell-icon .intro-text, .strength-icon .strength-text, .power-icon .power-text {
+    .dumbell-icon .intro-text, 
+    .strength-icon .strength-text, 
+    .power-icon .power-text {
         bottom:4.5%;
     }
-    .strength .strength-icon img:nth-child(2), .dumbbells .dumbell-icon img:nth-child(2), .power .power-icon img:nth-child(2){
+
+    .strength .strength-icon img:nth-child(2), 
+    .dumbbells .dumbell-icon img:nth-child(2), 
+    .power .power-icon img:nth-child(2){
         margin-top:10px;
     }
 }
@@ -186,7 +185,7 @@
 
 @media screen and (max-width:555px){
     .introduce .container .row .sub-intro{
-        flex-direction: column;
+        .flex-direction-cl;
         border:1px solid @cl-border;
     }
     .introduce .container .row .sub-intro > div{
@@ -199,23 +198,40 @@
             order: 1;
         }
         .strength  .strength-icon{
-            order:2;
+            order: 2;
         }
-        .strength .strength-icon img:nth-child(2), .dumbbells .dumbell-icon img:nth-child(2), .power .power-icon img:nth-child(2){
+        .strength .strength-icon img:nth-child(2), 
+        .dumbbells .dumbell-icon img:nth-child(2), 
+        .power .power-icon img:nth-child(2){
             margin-top:20px;
         }
-        .dumbell-icon .intro-text, .strength-icon .strength-text, .power-icon .power-text {
+
+        .dumbell-icon .intro-text, 
+        .strength-icon .strength-text, 
+        .power-icon .power-text {
             bottom:16.5%;
         }
 }
 
 
 @media screen and (max-width: 375px){
-    .strength .strength-icon img:nth-child(2), .dumbbells .dumbell-icon img:nth-child(2), .power .power-icon img:nth-child(2){
+    .strength .strength-icon img:nth-child(2), 
+    .dumbbells .dumbell-icon img:nth-child(2), 
+    .power .power-icon img:nth-child(2){
         margin-top:0;
     }
-    .dumbell-icon .intro-text, .strength-icon .strength-text, .power-icon .power-text {
+
+    .dumbell-icon .intro-text, 
+    .strength-icon .strength-text, 
+    .power-icon .power-text {
         bottom:10%;
     }
 }
 
+@media screen and (min-width: 986px) and (max-width: 1016px){
+    .dumbell-icon .intro-text, 
+    .strength-icon .strength-text, 
+    .power-icon .power-text {
+        bottom: 10px;
+    }
+}

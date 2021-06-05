@@ -22,22 +22,13 @@
         border-radius: 5px;
         text-align: center;
         line-height: 30px;
-       
-        &:hover{
-          color:@white;
-          background: @cl-btn-hover;
-          font-weight: 400;
-          font-size:14px;
-          
-        }
+        font-weight: 400;
+        font-size:14px;
       }
     }
   }
-  .pr:hover .product-advance{
-    .display-flex;
-    .flex-direction-cl;
-  }
- 
+  
+
   width: 100%;
 //-------TAB-BAR__PRODUCT---------
   .products-bar {
@@ -106,9 +97,11 @@
   }
 }
 .products-product{
-  .row-featured,.row-most__reviews{
+  .row-featured,
+  .row-most__reviews{
     display: none;
   }
+
   .row{
     .transform-translateX(5px);
   }
@@ -120,22 +113,14 @@
   height: 330px;
   padding: 0 15px;
   margin-bottom: 45px;
-
-  &:hover .item {
-    border: 1px @cl-border ridge;
-    transition: 1s;
-    box-shadow:1px 1px 1px  @cl-border ;
-    height: inherit;
-  }
+ 
+  
 
   img {
     width : 100%;
     height: auto;
   }
-  &:nth-child(7) .pr-img img{
-    .transform-translateY(-5px);
-  }
-
+ 
   p,
   span {
     margin-left: 30px;
@@ -216,9 +201,7 @@
   .manual-btn:not(:last-child){
     margin-right: 10px;
   }
-  .manual-btn:hover{
-    background-color: @cl-btn-hover;
-  }
+  
 
 #radio1:checked ~ .client__first{
 	margin-left:0;
@@ -270,7 +253,7 @@
     }
   }
 
-  p.expresser-name{
+  .expresser-name{
     font-family: 'Poppins-bold';
     font-size: 18px;
     text-align: center;
@@ -374,10 +357,34 @@
     width: 50%;
     margin-top:30px;
     height: auto;
+  
+    .item:focus-within{
+      border: 1px @cl-border ridge;
+      transition: 1s;
+      box-shadow:1px @cl-border ;
+      height: inherit;
+      .product-advance{
+        .display-flex;
+        .flex-direction-cl;
+      }
+    }
   }
+
+  .products .pr .pr-img .product-advance a:active{
+    color:@white;
+    background: @cl-btn-hover;
+
+  }
+
+  .client-say .navigation-manual .manual-btn:active{
+    background-color: @cl-btn-hover;
+  }
+ 
   .brands .brand{
     width: 50%;
   }
+  
+  
 }
 
 //------------------------------------
@@ -492,3 +499,26 @@
     .transform-translateX(-50%);
   }
 }
+@media screen and (min-width:769px){
+  .pr:hover .item {
+    border: 1px @cl-border ridge;
+    transition: 1s;
+    box-shadow:1px 1px 1px  @cl-border ;
+    height: inherit;
+  }
+
+  .products  .pr:hover .product-advance{
+    .display-flex;
+    .flex-direction-cl;
+  }
+
+  .products .pr .pr-img .product-advance a:hover{
+    color:@white;
+    background: @cl-btn-hover;
+    font-weight: 400;
+    font-size:14px;
+  }
+  .client-say .navigation-manual .manual-btn:hover{
+    background-color: @cl-btn-hover;
+  }
+ }

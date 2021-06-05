@@ -78,9 +78,7 @@
                     .transform-translate(8px, 16px);
                     display: block  ;
                     padding-left: 11px;
-                    &:hover{
-                        color: white;
-                    }
+                   
             }
         }
 
@@ -204,6 +202,9 @@
     .footer .footer-mid .row__footer-mid div{
         width: 50%;
         text-align: center;
+        a:active {
+            color: @white;
+        }
     }
 
     .footer .footer-mid .row__footer-mid .contact p:nth-of-type(n){
@@ -254,9 +255,15 @@
 }
 
 
-
 @media screen and (max-width: 320px){
     .footer .footer-top .footer__link {
         .transform-translateY(130px);
     }
+}
+
+@media screen and (min-width:769px) {
+    .footer .footer-mid .row__footer-mid div a:hover{
+            color:@white;
+        
+    }   
 }
